@@ -64,4 +64,4 @@ class Create_Account(Account):
             self.balance -= amount
             self.transactions.append(trans)
 
-super_user = Create_Account("Imtiazul Islam", "imtiajul37@gmail.com", "dhaka", "029349", "1111", "admin")
+super_user = Create_Account('Admin', 'admin', "Bangladesh",1344,'123','admin')
