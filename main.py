@@ -203,6 +203,9 @@ def main():
                         continue
                 # Can transfer the amount from his account to another user account. if the other account does not exist then show an error message “Account does not exist”. 
                 elif option == 6:
+                    if money_bank.check_bankrupt():
+                        print('This bank is declared as bankrupt!!')
+                        continue
                     acc_email = input('Account email: ')
                     if acc_email == current_user.email:
                         print("You can not transfer money to yourself")
